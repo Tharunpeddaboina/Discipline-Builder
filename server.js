@@ -38,7 +38,8 @@ Faith + discipline + action.
 `;
 
 // ⏰ CRON — EVERY 15 MINUTES (DAILY)
-cron.schedule("*/15 * * * *", () => {
+cron.schedule("*/15 * * * *", () => { 
+   console.log("⏰ CRON TRIGGERED:", new Date().toISOString());
   transporter.sendMail(
     {
       from: `Discipline System 💪 <${process.env.EMAIL_USER}>`,
@@ -59,4 +60,5 @@ cron.schedule("*/15 * * * *", () => {
 app.listen(port, () => {
   console.log(`server started at ${port} port`);
 });
+
 
