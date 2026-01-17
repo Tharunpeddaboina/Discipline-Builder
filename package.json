@@ -1,20 +1,17 @@
 {
-  "name": "discipline",
+  "name": "discipline-builder",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Purpose-driven email reminder system using Node.js, cron, and Nodemailer",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Tharun Peddaboina",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "cron": "^4.4.0",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "mongoose": "^9.1.4",
-    "node-cron": "^4.2.1",
-    "nodemailer": "^7.0.12",
-    "nodemon": "^3.1.11"
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.8",
+    "dotenv": "^16.4.5"
   }
 }
